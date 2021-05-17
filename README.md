@@ -3,7 +3,7 @@
 
 ## Data Shape!
 
-[Uploading 20210517_182133.png…]()
+![20210517_182133](https://user-images.githubusercontent.com/71545160/118467187-8f011400-b73e-11eb-82ed-8ab009f1cac3.png)
 
 ## How can we eliminate the noise - by FFT
 
