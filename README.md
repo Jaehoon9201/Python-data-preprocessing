@@ -1,4 +1,4 @@
-# Python-1D-FFT  --- Under a Revision
+# Python-1D-FFT  
 
 This example code is a reproduction of the code in the reference next.[Reference](https://www.youtube.com/watch?v=s2K1JfNR7Sc)
 
