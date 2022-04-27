@@ -34,3 +34,20 @@ TobeStacked = TobeStacked.reshape(-1, 6)
 TobeStacked = pd.DataFrame(TobeStacked)
 ```
 
+# SVM/SVM_classifier.py
+svm_classifier using a scikit learn
+
+If your data group is more than 3, </br> 
+you should use below code for ensuring visualization.
+
+```python
+z = clf.predict(xy)
+```
+
+If your data group is smaller than 3, </br> 
+you can also use below code for visualization with rpresentating of margins.
+
+```python
+z = clf.decision_function(xy)
+```
+
