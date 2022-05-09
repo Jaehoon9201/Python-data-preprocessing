@@ -9,7 +9,7 @@ The second graph in the plot below shows the FFT analysis of the noise signal ad
 The horizontal axis represents the frequency, and the vertical axis represents the magnitude of each frequency.
 <img src="https://user-images.githubusercontent.com/71545160/118467129-7e509e00-b73e-11eb-8ac3-78769bea97f5.png" width="600" height="400">
 
-
+---
 
 # Sanmpler-and-Generator.py  
 You can do [1], [2] using this file  
@@ -34,6 +34,8 @@ TobeStacked = TobeStacked.reshape(-1, 6)
 TobeStacked = pd.DataFrame(TobeStacked)
 ```
 
+---
+
 # SVM/SVM_classifier.py
 svm_classifier using a scikit learn
 
@@ -51,3 +53,8 @@ you can also use below code for visualization with rpresentating of margins.
 z = clf.decision_function(xy)
 ```
 
+---
+
+# PCA_restoring > pca_various_plt_test.py
+
+![image](https://user-images.githubusercontent.com/71545160/167357642-268f0f09-f011-479c-b530-e6287b242219.png)
