@@ -55,6 +55,6 @@ z = clf.decision_function(xy)
 
 ---
 
-# PCA_restoring > pca_various_plt_test.py
+# PCA_Reconstructing > pca_various_plt_test.py
 
 ![image](https://user-images.githubusercontent.com/71545160/167357642-268f0f09-f011-479c-b530-e6287b242219.png)
