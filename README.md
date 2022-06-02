@@ -15,7 +15,7 @@ def FFT(sample_rate, duration, signal):
     ...
     return xf, yf, phase_ang
 ```
-<img src="https://user-images.githubusercontent.com/71545160/171537184-f8a1506f-8f83-4860-9279-3da5d9ec2600.png" width="600" height="400">
+<img src="https://user-images.githubusercontent.com/71545160/171537184-f8a1506f-8f83-4860-9279-3da5d9ec2600.png" width="600" height="250">
 
 # FFt_ex3.py
 ```python
@@ -23,7 +23,7 @@ def FFT(sample_rate, duration, signal):
     ...
     return xf, amplitude_Hz, phase_ang
 ```
-<img src="https://user-images.githubusercontent.com/71545160/171537283-3b8457b5-3ed1-4199-8b29-f673ce47ee0a.png" width="600" height="400">
+<img src="https://user-images.githubusercontent.com/71545160/171537283-3b8457b5-3ed1-4199-8b29-f673ce47ee0a.png" width="600" height="250">
 
 <br>
 <br>
