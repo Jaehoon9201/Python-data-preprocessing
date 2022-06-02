@@ -1,5 +1,6 @@
 # FFt_ex1.py
-This example code is a reproduction of the code in the reference next.  [Reference](https://www.youtube.com/watch?v=s2K1JfNR7Sc)  
++ This example code is a reproduction of the code in the reference next.  [Reference](https://www.youtube.com/watch?v=s2K1JfNR7Sc)  
++ Include this [FFT_ex1.py], all examples do FFT over the entire interval. If you change **FFT windows(unit: # of samples or seconds)** , a frequency resolution  decreases by the proportion **Fsamp/FFTwindows**. Eventhough, range of frequency analysis is not changed.
 
 ## Data Shape!  
 <img src="https://user-images.githubusercontent.com/71545160/118467187-8f011400-b73e-11eb-82ed-8ab009f1cac3.png" width="600" height="400">
