@@ -37,8 +37,11 @@ def FFT(sample_rate, duration, signal):
 <img src="https://user-images.githubusercontent.com/71545160/171537283-3b8457b5-3ed1-4199-8b29-f673ce47ee0a.png" width="600" height="250">
 
 + :worried: Is this ex3 result same with matlab **positiveFFT** ? Matlab codes are represented below.
-    + Ans : not perfectly same with the result of ex3's. 
-    + Reason : Below matlab code is doing 'normalize' as 'X=fft(x)/N*2; % normalize the data'. But python [ex3] code get the magnitude values after 'abs' function(amplitude_Hz = 2*abs(Y)).    
+    + **Ans** : not perfectly same with the result of ex3's. 
+    + **Reason** : Below matlab code is doing 'normalize' as 'X=fft(x)/N*2; % normalize the data'.  
+    
+                   But python [ex3] code get the magnitude values after 'abs' function('amplitude_Hz = 2*abs(Y)').    
+                   
         ```matlab
         % test.m
         clear;clc;
