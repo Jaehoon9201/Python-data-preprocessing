@@ -81,7 +81,7 @@ def FFT(sample_rate, duration, signal):
            X = X(1:cutOff);
            freq = freq(1:cutOff);
         ```
-<img src="https://user-images.githubusercontent.com/71545160/171540248-a3936fcb-4817-4269-9cae-e83d026e732f.png" width="600" height="250">
+        <img src="https://user-images.githubusercontent.com/71545160/171540248-a3936fcb-4817-4269-9cae-e83d026e732f.png" width="600" height="250">
 
 
 <br>
