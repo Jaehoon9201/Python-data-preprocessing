@@ -1,6 +1,27 @@
+# Characteristics of FFT
++ Include this [FFT_ex1.py], all examples do FFT over the entire interval. If you change **FFT windows(unit: # of samples or seconds)** , a frequency resolution  decreases by the proportion **Fsamp/FFTwindows**. Eventhough, range of frequency analysis is not changed.
+
++ [Reference](https://support.ircam.fr/docs/AudioSculpt/3.0/co/Window%20Size.html) 
+    + Lowest Detectable Frequency 
+        + F0  = 5*(SR/Window Size)
+        + ex ) F0 = 5*(44100/1024) ≃ 215 Hz.
+        
+    + WS = 5*Fsamp/F0
+        + F0 = 440 Hz --> WS = 501
+        + F0 = 100 Hz --> WS = 2205
+        
+    + TR = Window Size/Fsamp
+        + If window size is big --> time domain is shrinked. 
+        
+    + FR = Fsamp/Window Size
+        + The more bins, the more slices of frequency range we get.
+
++ **Summary** ([Reference](http://www.add.ece.ufl.edu/4511/references/ImprovingFFTResoltuion.pdf))
+    + A greater frequency resolution results in a smaller time resolution. 
+
+
 # FFt_ex1.py
 + This example code is a reproduction of the code in the reference next.  [Reference](https://www.youtube.com/watch?v=s2K1JfNR7Sc)  
-+ Include this [FFT_ex1.py], all examples do FFT over the entire interval. If you change **FFT windows(unit: # of samples or seconds)** , a frequency resolution  decreases by the proportion **Fsamp/FFTwindows**. Eventhough, range of frequency analysis is not changed.
 
 ## Data Shape!  
 <img src="https://user-images.githubusercontent.com/71545160/118467187-8f011400-b73e-11eb-82ed-8ab009f1cac3.png" width="600" height="400">
