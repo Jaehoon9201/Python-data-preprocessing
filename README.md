@@ -10,12 +10,22 @@ The horizontal axis represents the frequency, and the vertical axis represents t
 <img src="https://user-images.githubusercontent.com/71545160/118467129-7e509e00-b73e-11eb-8ac3-78769bea97f5.png" width="600" height="400">
 
 # FFt_ex2.py
+
 ```python
 def FFT(sample_rate, duration, signal):
     ...
     return xf, yf, phase_ang
 ```
 <img src="https://user-images.githubusercontent.com/71545160/171537184-f8a1506f-8f83-4860-9279-3da5d9ec2600.png" width="600" height="250">
+
+:worried: Why are the results different with ex1 ?
+    + In [ex1] code, it obtains **power spectrum** scale value. 
+        ```python
+        fhat = np.fft.fft(f,n)                     #compute the FFT
+        PSD = fhat * np.conj(fhat)/n               #power spectrum 
+        freq = (1/(dt*n)) * np.arange(n)           #x-axis of frequencies 
+        L = np.arange(1,np.floor(n/2),dtype='int') #only plot 1st half
+        ```
 
 # FFt_ex3.py
 ```python
