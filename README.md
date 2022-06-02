@@ -11,7 +11,7 @@ The horizontal axis represents the frequency, and the vertical axis represents t
 
 ---
 
-# Sanmpler-and-Generator.py  
+# Sampler-and-Generator.py  
 You can do [1], [2] using this file  
 [1] Sampling  
 Sampling from Github_set.csv  
