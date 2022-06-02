@@ -18,8 +18,9 @@ def FFT(sample_rate, duration, signal):
 ```
 <img src="https://user-images.githubusercontent.com/71545160/171537184-f8a1506f-8f83-4860-9279-3da5d9ec2600.png" width="600" height="250">
 
-:worried: Why are the results different with ex1 ?
++ :worried: Why are the results different with ex1 ?
     + In [ex1] code, it obtains **power spectrum** scale value. 
+    
         ```python
         fhat = np.fft.fft(f,n)                     #compute the FFT
         PSD = fhat * np.conj(fhat)/n               #power spectrum 
@@ -34,6 +35,51 @@ def FFT(sample_rate, duration, signal):
     return xf, amplitude_Hz, phase_ang
 ```
 <img src="https://user-images.githubusercontent.com/71545160/171537283-3b8457b5-3ed1-4199-8b29-f673ce47ee0a.png" width="600" height="250">
+
++ :worried: Is this ex3 result same with matlab **positiveFFT** ? Matlab codes are represented below.
+    + Ans : not perfectly same with the result of ex3's. 
+    + Reason : Below matlab code is doing 'normalize' as 'X=fft(x)/N*2; % normalize the data'. But python [ex3] code get the magnitude values after 'abs' function(amplitude_Hz = 2*abs(Y)).    
+        ```matlab
+        % test.m
+        clear;clc;
+        dt = 0.001; 
+        t= 0:dt:1;
+        noise = 2.5 .*rand(length(t),1 );
+        x= sin(2*pi*50*t) + sin(2*pi*120*t);
+
+        positiveFFT(x',length(x'));
+
+        Magnitude=(abs(ans))';
+        Order=0:1:length(Magnitude)-1;
+        bar(Order, Magnitude);
+
+        grid on;
+        xlabel('Harmonic Order','FontSize',15);
+        ylabel('Mag','FontSize',15);
+        set(gca,'FontSize',15);
+        grid on;
+        ```
+        
+        ```matlab
+        % poisitiveFFT.m
+        function [X,freq]=positiveFFT(x,Fs)
+           N=length(x); %get the number of points
+           k=0:N-1;     %create a vector from 0 to N-1
+           T=N/Fs;      %get the frequency interval
+           freq=k/T;    %create the frequency range
+           X=fft(x)/N*2; % normalize the data
+         if X(1)~=X(N)
+             X(1)=X(1)/2;
+         end
+           %only want the first half of the FFT, since it is redundant
+           cutOff = ceil(N/2); 
+
+           %take only the first half of the spectrum
+           X = X(1:cutOff);
+           freq = freq(1:cutOff);
+        ```
+<img src="https://user-images.githubusercontent.com/71545160/171540248-a3936fcb-4817-4269-9cae-e83d026e732f.png" width="600" height="250">
+
 
 <br>
 <br>
