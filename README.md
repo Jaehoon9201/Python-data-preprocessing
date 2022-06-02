@@ -1,4 +1,4 @@
-# FFt.py
+# FFt_ex1.py
 This example code is a reproduction of the code in the reference next.  [Reference](https://www.youtube.com/watch?v=s2K1JfNR7Sc)  
 
 ## Data Shape!  
@@ -9,7 +9,31 @@ The second graph in the plot below shows the FFT analysis of the noise signal ad
 The horizontal axis represents the frequency, and the vertical axis represents the magnitude of each frequency.
 <img src="https://user-images.githubusercontent.com/71545160/118467129-7e509e00-b73e-11eb-8ac3-78769bea97f5.png" width="600" height="400">
 
+# FFt_ex2.py
+```python
+def FFT(sample_rate, duration, signal):
+    ...
+    return xf, yf, phase_ang
+```
+<img src="https://user-images.githubusercontent.com/71545160/171537184-f8a1506f-8f83-4860-9279-3da5d9ec2600.png" width="600" height="400">
+
+# FFt_ex3.py
+```python
+def FFT(sample_rate, duration, signal):
+    ...
+    return xf, amplitude_Hz, phase_ang
+```
+<img src="https://user-images.githubusercontent.com/71545160/171537283-3b8457b5-3ed1-4199-8b29-f673ce47ee0a.png" width="600" height="400">
+
+<br>
+<br>
+<br>
+
 ---
+
+<br>
+<br>
+<br>
 
 # Sampler-and-Generator.py  
 You can do [1], [2] using this file  
@@ -34,7 +58,15 @@ TobeStacked = TobeStacked.reshape(-1, 6)
 TobeStacked = pd.DataFrame(TobeStacked)
 ```
 
+<br>
+<br>
+<br>
+
 ---
+
+<br>
+<br>
+<br>
 
 # SVM/SVM_classifier.py
 svm_classifier using a scikit learn
@@ -53,7 +85,15 @@ you can also use below code for visualization with rpresentating of margins.
 z = clf.decision_function(xy)
 ```
 
+<br>
+<br>
+<br>
+
 ---
+
+<br>
+<br>
+<br>
 
 # PCA_Reconstructing > pca_various_plt_test.py
 
