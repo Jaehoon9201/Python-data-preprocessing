@@ -219,3 +219,31 @@ This topic often comes up in the context of image processing. Consider Lenna -- 
 
 We can treat this grayscale image as a 512×512 data matrix Xraw. I perform PCA on it and compute X^raw using the first 50 principal components. The result is displayed on the right.
 
+<br>
+<br>
+<br>
+
+---
+
+<br>
+<br>
+<br>
+
+# Data save to a text file
+
++ It makes text file with target data.
++ If you set a below code, you can distinguish the data with lines.
+
+    ```python
+        for i in range(len(data1)):
+            if i % 10 == 0 and i > 0:
+                file_1.write('\n')
+                file_1.write(',')
+                file_2.write('\n')
+                file_2.write(',')
+            elif i % 10 != 0 and i > 0:
+                file_1.write(',')
+                file_2.write(',')
+    ```
+    
+    + All data are saved in string format before saving them.
