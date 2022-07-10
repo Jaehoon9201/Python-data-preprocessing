@@ -254,5 +254,12 @@ We can treat this grayscale image as a 512×512 data matrix Xraw. I perform PCA 
 
 # CompSens (Compressive Sensing)
 
-![image](https://user-images.githubusercontent.com/71545160/178152292-1062afce-4689-43fc-91a1-da878214c341.png)
+<img src="https://user-images.githubusercontent.com/71545160/178152292-1062afce-4689-43fc-91a1-da878214c341.png" width="600" height="600">
 
+## real time domain plot 
+
+![image](https://user-images.githubusercontent.com/71545160/178152327-63cacc5b-d73a-4a3f-b1c8-8e739ad1b93f.png)
+
+## DCT domain plot
+
+![image](https://user-images.githubusercontent.com/71545160/178152333-a6939215-8e17-4c19-a35f-e21d03530784.png)
