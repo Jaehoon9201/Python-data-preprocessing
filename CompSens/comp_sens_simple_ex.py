@@ -44,7 +44,6 @@ CompSensIdx = np.sort(CompSensIdx)
 CompSensData = data[CompSensIdx]
 
 
-
 plt.figure(figsize=(12, 3))
 plt.plot(t, data, 'b', t[CompSensIdx], CompSensData, 'r.', linewidth=0.2, markersize=1)
 plt.title('original audio and compressed sensing')
@@ -57,7 +56,9 @@ SampBasis = Basis[CompSensIdx, :]
 lasso = linear_model.Lasso(alpha=0.001)
 lasso.fit(SampBasis, CompSensData.reshape((CompSensNum,)))
 ReconsData = idct(lasso.coef_.reshape((SampleNum, 1)), axis=0)
-
+# plt.figure(figsize=(12, 3))
+# plt.grid()
+# plt.plot(lasso.coef_.reshape((SampleNum, 1)),'b*', markersize=1)
 
 plt.figure(figsize=(12, 3))
 plt.plot(t, data, 'b', linewidth=0.2, label = 'orgin')
