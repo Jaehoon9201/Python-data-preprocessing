@@ -250,3 +250,9 @@ We can treat this grayscale image as a 512×512 data matrix Xraw. I perform PCA 
 
 <img src="https://user-images.githubusercontent.com/71545160/172093975-c392683c-172e-4e7e-9e81-ef69e850b0c0.png" width="400" height="200">
 <img src="https://user-images.githubusercontent.com/71545160/172093981-6e573062-2456-4745-8c43-02f6bf4141d9.png" width="400" height="200">
+
+
+# CompSens (Compressive Sensing)
+
+![image](https://user-images.githubusercontent.com/71545160/178152292-1062afce-4689-43fc-91a1-da878214c341.png)
+
