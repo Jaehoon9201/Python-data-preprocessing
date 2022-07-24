@@ -288,7 +288,7 @@ spec = np.flip(spec, axis=0)
 
 # wavelet_trans_basic_ex( = Continuous Wavelet Transform(CWT) )
 
-<img src="https://user-images.githubusercontent.com/71545160/180641708-68080060-87b4-40f2-90aa-c730de648585.png" width="300" height="300">
+<img src="https://user-images.githubusercontent.com/71545160/180641708-68080060-87b4-40f2-90aa-c730de648585.png" width="600" height="300">
 
 
 
