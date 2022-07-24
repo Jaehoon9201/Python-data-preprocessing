@@ -92,8 +92,8 @@ class AudioUtil():
         contourlevels = np.log2(levels)
 
         # FLIPPING
-        period = np.flip(period)
-        power = np.flip(power, axis = 1)
+        #period = np.flip(period)
+        #power = np.flip(power, axis = 1)
 
 
         fig, ax = plt.subplots(figsize=(10, 6))
