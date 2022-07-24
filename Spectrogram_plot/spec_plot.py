@@ -163,6 +163,7 @@ spec = AudioUtil.spectro_gram(signal, n_mels=128, n_fft=1024, hop_len=512)
 
 
 spec = torch2npy(spec)
+# spec = np.flip(spec, axis=0)
 
 [h, w] = spec.shape
 canvas = np.ones((h, w), np.float32)
