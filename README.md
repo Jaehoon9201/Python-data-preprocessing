@@ -268,16 +268,16 @@ We can treat this grayscale image as a 512×512 data matrix Xraw. I perform PCA 
 # Spectrogram_plot
 
 ## 100Hz
-<img src="https://user-images.githubusercontent.com/71545160/180639722-1fdacb22-c7b0-41d1-a34e-dd1a1609426d.png" width="600" height="600">
+<img src="https://user-images.githubusercontent.com/71545160/180639722-1fdacb22-c7b0-41d1-a34e-dd1a1609426d.png" width="300" height="300">
 
 ## 200Hz
-<img src="https://user-images.githubusercontent.com/71545160/180639737-117d2f27-b214-486f-a4b6-186379dcac37.png" width="600" height="600">
+<img src="https://user-images.githubusercontent.com/71545160/180639737-117d2f27-b214-486f-a4b6-186379dcac37.png" width="300" height="300">
 
 ## 2000Hz
-<img src="https://user-images.githubusercontent.com/71545160/180639738-ce13c8c3-e4a1-4e22-9792-aadac8e3c0eb.png" width="600" height="600">
+<img src="https://user-images.githubusercontent.com/71545160/180639738-ce13c8c3-e4a1-4e22-9792-aadac8e3c0eb.png" width="300" height="300">
 
 ## 10000Hz
-<img src="https://user-images.githubusercontent.com/71545160/180639736-23b6de04-fcb8-48de-9b4f-366044b5862d.png" width="600" height="600">
+<img src="https://user-images.githubusercontent.com/71545160/180639736-23b6de04-fcb8-48de-9b4f-366044b5862d.png" width="300" height="300">
 
 
 
