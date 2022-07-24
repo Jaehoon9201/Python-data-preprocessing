@@ -267,6 +267,12 @@ We can treat this grayscale image as a 512×512 data matrix Xraw. I perform PCA 
 
 # Spectrogram_plot
 
+If you want to place results in low frequency on bottom, 
+active a below code.
+```python
+spec = np.flip(spec, axis=0)
+```
+
 ## 100Hz
 <img src="https://user-images.githubusercontent.com/71545160/180639722-1fdacb22-c7b0-41d1-a34e-dd1a1609426d.png" width="300" height="300">
 
