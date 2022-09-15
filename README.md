@@ -302,6 +302,6 @@ spec = np.flip(spec, axis=0)
 
 # Path Example
 
-<img src="https://user-images.githubusercontent.com/71545160/190367315-8b35e23d-e1fe-44af-afc8-bb57e38bfeaf.png" width="450" height="600">
+<img src="https://user-images.githubusercontent.com/71545160/190367315-8b35e23d-e1fe-44af-afc8-bb57e38bfeaf.png" width="500" height="600">
 
 
