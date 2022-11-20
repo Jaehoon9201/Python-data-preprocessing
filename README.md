@@ -366,3 +366,16 @@ Below figure is from above reference site ! They say generally set 'center frequ
 
 <img width="636" alt="스크린샷 2022-11-20 오후 5 07 21" src="https://user-images.githubusercontent.com/71545160/202892018-504a0803-2389-4e34-9467-97911e46818c.png">
 
+#### Case 1
+<img width="304" alt="스크린샷 2022-11-20 오후 5 15 50" src="https://user-images.githubusercontent.com/71545160/202892302-a4063231-0f5d-46e9-87ac-72e1b5de0f1a.png">
+![wavelet_cmor10-2](https://user-images.githubusercontent.com/71545160/202892395-c96c650f-da25-440d-90af-69b06f31b5f6.png)
+
+#### Case 2
+<img width="304" alt="스크린샷 2022-11-20 오후 5 16 24" src="https://user-images.githubusercontent.com/71545160/202892328-9925aec6-e209-417f-8ec0-1e6b3341b2c2.png">
+![wavelet_cmor63 5-2](https://user-images.githubusercontent.com/71545160/202892406-a59fffc6-7e14-4992-9de7-5c4899bc62e7.png)
+
+#### Case 3!
+
+<img width="304" alt="스크린샷 2022-11-20 오후 5 17 36" src="https://user-images.githubusercontent.com/71545160/202892359-64686325-3902-475c-88de-9e3892d2c881.png">
+![wavelet_mexh](https://user-images.githubusercontent.com/71545160/202892408-ba32f31f-1816-4f28-bf8d-a6a0b02f6005.png)
+
