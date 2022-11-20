@@ -363,7 +363,8 @@ $$ {\psi(t)} = {1 \over{\sqrt{\pi B}}} e^{-t^2 \over B} e^{j2 \pi Ct} $$
 
 * [PyWavelet Reference](https://buildmedia.readthedocs.org/media/pdf/pywavelets/stable/pywavelets.pdf)
 
-<mark style='background-color: #fff5b1'>Below figure is from above reference site ! They say that  reasonable results are come from when scales are above '2'. In other words, when 'C=1', and 'Scale = 1', the highest frequency being analyzed is same with 'Sampling Frequency'. It violate the Nyquist theorem. (i.e., it cannot result reasonable value)</mark>
+Below figure is from above reference site ! **They say that  reasonable results are come from when scales are above '2'**. In other words, when 'C=1', and 'Scale = 1', the highest frequency being analyzed is same with 'Sampling Frequency'. It violate the Nyquist theorem. (i.e., it cannot result reasonable value). 
+
 
 ![image](https://user-images.githubusercontent.com/71545160/202896301-cfa5d48d-38a7-4971-a05c-a99ae8fe39c0.png)
 
@@ -399,6 +400,10 @@ You can verify a relation between 2 things.
 
 * Relation b/w FREQEUNCies and SCALEs
 * Relation b/w CENTER FREQUENCY and SCALEs
+
+As mentioned above, if u set 'C=1' , the resonalble results are come from 'above scale 2'.
+
+If you want to get reasonable results from 'scale 1', then you are recommended to set 'C' below 1. (ex. C = 0.5)
 
 <img width="659" alt="스크린샷 2022-11-20 오후 10 03 16" src="https://user-images.githubusercontent.com/71545160/202903322-a5ea19ee-2344-46f2-9d63-1a56620df83d.png">
 
