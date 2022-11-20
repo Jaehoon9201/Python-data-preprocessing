@@ -339,7 +339,10 @@ $$ {\psi(t)} = {2 \over{\sqrt3\sqrt[4]\pi}} e^{-t^2\over2}(1-t^2) $$
 
 This wavelet has imaginary part. 
 
-On the **cmorB-C**, B and C represents : B-> bandwith, C -> center frequecny
+On the **cmorB-C**, B and C represents : 
+
+** B-> bandwith, 
+** C -> center frequecny
 
 Also, if you wanna plot this outputs, you should consider imaginary part.
 
@@ -357,4 +360,9 @@ $$ {\psi(t)} = {1 \over{\sqrt{\pi B}}} e^{-t^2 \over B} e^{j2 \pi Ct} $$
 
 ### How to set B and C ?
 
+* [PyWavelet Reference](https://buildmedia.readthedocs.org/media/pdf/pywavelets/stable/pywavelets.pdf)
+
+Below figure is from above reference site ! They say generally set 'center frequency(C) scale' above 2 considering Nyquist theorem.
+
+<img width="636" alt="스크린샷 2022-11-20 오후 5 07 21" src="https://user-images.githubusercontent.com/71545160/202892018-504a0803-2389-4e34-9467-97911e46818c.png">
 
