@@ -358,7 +358,7 @@ In this code, i manage it like below.
 
 $$ {\psi(t)} = {1 \over{\sqrt{\pi B}}} e^{-t^2 \over B} e^{j2 \pi Ct} $$
 
-### How to set B and C ?
+### How to set 'B and C' ?
 
 * [PyWavelet Reference](https://buildmedia.readthedocs.org/media/pdf/pywavelets/stable/pywavelets.pdf)
 
@@ -366,6 +366,20 @@ Below figure is from above reference site ! They say generally set 'center frequ
 
 ![image](https://user-images.githubusercontent.com/71545160/202896301-cfa5d48d-38a7-4971-a05c-a99ae8fe39c0.png)
 
+### How to set 'scales' ? 
+
+In this project, 'scales' is set like below way.
+
+```python
+scale_min = 2
+#scale_max = 300
+scale_max = 130
+scales = np.arange(scale_min, scale_max)
+```
+
+If scales contain big large value, the wavelet is to be streched, and going to be sensitive to lower frequencies on the signal.
+
+As mentioned above, start value of scale is recommended to being above 2 for overcoming the nyquist limitaion.
 
 # Running Results 
 
