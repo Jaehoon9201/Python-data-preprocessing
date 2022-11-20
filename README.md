@@ -314,7 +314,7 @@ spec = np.flip(spec, axis=0)
 <br>
 <br>
 
-# CWT_v2
+# CWT_v2  - ex
 
 ## Mexican Hat Wavelet
 
@@ -383,13 +383,22 @@ As mentioned above, start value of scale is recommended to being above 2 for ove
 
 # Running Results 
 
-<img src="https://user-images.githubusercontent.com/71545160/202892302-a4063231-0f5d-46e9-87ac-72e1b5de0f1a.png" width="150" height="100">
-
-<img src="https://user-images.githubusercontent.com/71545160/202892328-9925aec6-e209-417f-8ec0-1e6b3341b2c2.png" width="150" height="100">
-
-<img src="https://user-images.githubusercontent.com/71545160/202892359-64686325-3902-475c-88de-9e3892d2c881.png" width="150" height="100">
-
 (if u want to see the origin figure, refer to ppt in this project)
 
-<img width="781" alt="image" src="https://user-images.githubusercontent.com/71545160/202901226-dde30683-90c5-40ad-92d5-60cab64690fc.png">
+<img width="779" alt="스크린샷 2022-11-20 오후 10 01 39" src="https://user-images.githubusercontent.com/71545160/202903258-8e6780f0-f523-4458-96a5-e9de4cad9109.png">
+
+<img width="779" alt="스크린샷 2022-11-20 오후 10 01 55" src="https://user-images.githubusercontent.com/71545160/202903266-9bd55d75-5327-41e9-a5c4-e8dcbc9feb30.png">
+
+<img width="779" alt="스크린샷 2022-11-20 오후 10 02 10" src="https://user-images.githubusercontent.com/71545160/202903274-c0fd43a9-ba0f-4355-87a8-075946e65310.png">
+
+
+# CWT_v2  - ex2
+
+You can verify a relation between 2 things.
+
+* Relation b/w FREQEUNCies and SCALEs
+* Relation b/w CENTER FREQUENCY and SCALEs
+
+<img width="659" alt="스크린샷 2022-11-20 오후 10 03 16" src="https://user-images.githubusercontent.com/71545160/202903322-a5ea19ee-2344-46f2-9d63-1a56620df83d.png">
+
 
