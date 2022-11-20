@@ -341,8 +341,9 @@ This wavelet has imaginary part.
 
 On the **cmorB-C**, B and C represents : 
 
-** B-> bandwith, 
-** C -> center frequecny
+* B-> bandwith, 
+
+* C -> center frequecny
 
 Also, if you wanna plot this outputs, you should consider imaginary part.
 
@@ -362,7 +363,7 @@ $$ {\psi(t)} = {1 \over{\sqrt{\pi B}}} e^{-t^2 \over B} e^{j2 \pi Ct} $$
 
 * [PyWavelet Reference](https://buildmedia.readthedocs.org/media/pdf/pywavelets/stable/pywavelets.pdf)
 
-Below figure is from above reference site ! They say generally set 'center frequency(C) scale' above 2 considering Nyquist theorem.
+<mark style='background-color: #fff5b1'>Below figure is from above reference site ! They say that  reasonable results are come from when scales are above '2'. In other words, when 'C=1', and 'Scale = 1', the highest frequency being analyzed is same with 'Sampling Frequency'. It violate the Nyquist theorem. (i.e., it cannot result reasonable value)</mark>
 
 ![image](https://user-images.githubusercontent.com/71545160/202896301-cfa5d48d-38a7-4971-a05c-a99ae8fe39c0.png)
 
