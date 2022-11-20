@@ -364,19 +364,19 @@ $$ {\psi(t)} = {1 \over{\sqrt{\pi B}}} e^{-t^2 \over B} e^{j2 \pi Ct} $$
 
 Below figure is from above reference site ! They say generally set 'center frequency(C) scale' above 2 considering Nyquist theorem.
 
-<img width="636" alt="스크린샷 2022-11-20 오후 5 07 21" src="https://user-images.githubusercontent.com/71545160/202892018-504a0803-2389-4e34-9467-97911e46818c.png">
+![image](https://user-images.githubusercontent.com/71545160/202896301-cfa5d48d-38a7-4971-a05c-a99ae8fe39c0.png)
 
 #### Case 1
 
-<img src="https://user-images.githubusercontent.com/71545160/202892302-a4063231-0f5d-46e9-87ac-72e1b5de0f1a.png" width="400" height="400">
-<img src="https://user-images.githubusercontent.com/71545160/202892491-46225708-b1a6-4739-8428-52b178d77cb6.png" width="400" height="400">
+<img src="https://user-images.githubusercontent.com/71545160/202892302-a4063231-0f5d-46e9-87ac-72e1b5de0f1a.png" width="150" height="100">
+<img src="https://user-images.githubusercontent.com/71545160/202892491-46225708-b1a6-4739-8428-52b178d77cb6.png" width="400" height="300">
 
 #### Case 2
 
-<img src="https://user-images.githubusercontent.com/71545160/202892328-9925aec6-e209-417f-8ec0-1e6b3341b2c2.png" width="400" height="400">
-<img src="https://user-images.githubusercontent.com/71545160/202892482-777e49ea-107c-4b3d-a10e-2ba90b4b7dfc.png" width="400" height="400">
+<img src="https://user-images.githubusercontent.com/71545160/202892328-9925aec6-e209-417f-8ec0-1e6b3341b2c2.png" width="150" height="100">
+<img src="https://user-images.githubusercontent.com/71545160/202892482-777e49ea-107c-4b3d-a10e-2ba90b4b7dfc.png" width="400" height="300">
 
 #### Case 3!
 
-<img src="https://user-images.githubusercontent.com/71545160/202892359-64686325-3902-475c-88de-9e3892d2c881.png" width="400" height="400">
-<img src="https://user-images.githubusercontent.com/71545160/202892506-8b38346f-04fe-4ae0-8021-25d0142c51a2.png" width="400" height="400">
+<img src="https://user-images.githubusercontent.com/71545160/202892359-64686325-3902-475c-88de-9e3892d2c881.png" width="150" height="100">
+<img src="https://user-images.githubusercontent.com/71545160/202892506-8b38346f-04fe-4ae0-8021-25d0142c51a2.png" width="400" height="300">
