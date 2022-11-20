@@ -366,17 +366,16 @@ Below figure is from above reference site ! They say generally set 'center frequ
 
 ![image](https://user-images.githubusercontent.com/71545160/202896301-cfa5d48d-38a7-4971-a05c-a99ae8fe39c0.png)
 
-#### Case 1
+
+# Running Results 
 
 <img src="https://user-images.githubusercontent.com/71545160/202892302-a4063231-0f5d-46e9-87ac-72e1b5de0f1a.png" width="150" height="100">
-<img src="https://user-images.githubusercontent.com/71545160/202892491-46225708-b1a6-4739-8428-52b178d77cb6.png" width="400" height="300">
-
-#### Case 2
 
 <img src="https://user-images.githubusercontent.com/71545160/202892328-9925aec6-e209-417f-8ec0-1e6b3341b2c2.png" width="150" height="100">
-<img src="https://user-images.githubusercontent.com/71545160/202892482-777e49ea-107c-4b3d-a10e-2ba90b4b7dfc.png" width="400" height="300">
-
-#### Case 3!
 
 <img src="https://user-images.githubusercontent.com/71545160/202892359-64686325-3902-475c-88de-9e3892d2c881.png" width="150" height="100">
-<img src="https://user-images.githubusercontent.com/71545160/202892506-8b38346f-04fe-4ae0-8021-25d0142c51a2.png" width="400" height="300">
+
+(if u want to see the origin figure, refer to ppt in this project)
+
+<img width="781" alt="image" src="https://user-images.githubusercontent.com/71545160/202901226-dde30683-90c5-40ad-92d5-60cab64690fc.png">
+
