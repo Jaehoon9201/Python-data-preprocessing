@@ -21,8 +21,8 @@ class AudioUtil():
 data, Fsamp = AudioUtil.open("TRAIN M1 D40 L0 LABEL0 Num170.wav")
 MaxIdx = 100
 dataprocess = 'DataCut'  # ReSampl / DataCut
-waveletname = 'cmor63.5-2'
-# waveletname = 'cmor10-2'
+# waveletname = 'cmor63.5-1'
+waveletname = 'cmor10-1'
 # waveletname = 'mexh'
 scale_min = 2
 scale_max = 300
@@ -69,7 +69,7 @@ if waveletname == 'mexh':
     plt.close('all')
     print('shape of cwtmatr  :'  , cwtmatr.shape)
 
-elif waveletname == 'cmor63.5-2':
+elif waveletname == 'cmor63.5-1':
     '''
     Complex transforms
     Ideally we want to create an image that relates frequency and time. 
@@ -97,7 +97,7 @@ elif waveletname == 'cmor63.5-2':
     im = ax.contourf(time, wt_freq_results, wt_power_results, contourlevels, extend='both', cmap='viridis')
     yticks = 2**np.arange(np.ceil(wt_freq_results.min()), np.ceil(wt_freq_results.max()))
     yticks = np.round(yticks, 6)
-    print(yticks)
+    # print(yticks)
     ax.set_yticks(np.log2(yticks))
     ax.set_yticklabels(yticks)
     # ax.invert_yaxis()
@@ -109,7 +109,7 @@ elif waveletname == 'cmor63.5-2':
     plt.close('all')
 
 
-elif waveletname == 'cmor10-2':
+elif waveletname == 'cmor10-1':
 
     cwtmatr, freqs = pywt.cwt(data, scales,waveletname, dt)  # cmor63.5-2    mexh
     power = (abs(cwtmatr)) ** 2
