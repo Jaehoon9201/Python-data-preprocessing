@@ -304,4 +304,57 @@ spec = np.flip(spec, axis=0)
 
 <img src="https://user-images.githubusercontent.com/71545160/190367315-8b35e23d-e1fe-44af-afc8-bb57e38bfeaf.png" width="500" height="600">
 
+<br>
+<br>
+<br>
+
+---
+
+<br>
+<br>
+<br>
+
+# CWT_v2
+
+## Mexican Hat Wavelet
+
+### What to consider
+
+It otuputs constants shape with normalization factor, meaning it has 'energy' unit.
+
+Also, in this reason, if you wanna plot this outputs, you could just plot outputs.
+
+```python
+plt.imshow(cwtmatr, cmap='viridis', aspect='auto',
+                 vmax=abs(cwtmatr).max(), vmin=-abs(cwtmatr).max())
+```
+
+### Form
+
+$$ {\psi(t)} = {2 \over{\sqrt3\sqrt[4]\pi}} e^{-t^2\over2}(1-t^2) $$
+
+## Complex Morlet Wavelets
+
+### What to consider
+
+This wavelet has imaginary part. 
+
+On the **cmorB-C**, B and C represents : B-> bandwith, C -> center frequecny
+
+Also, if you wanna plot this outputs, you should consider imaginary part.
+
+In this code, i manage it like below.
+
+```python
+    power = (abs(cwtmatr)) ** 2
+    ...
+    wt_power_results = np.log2(power)
+```
+
+### Form
+
+$$ {\psi(t)} = {1 \over{\sqrt{\pi B}}} e^{-t^2 \over B} e^{j2 \pi Ct} $$
+
+### How to set B and C ?
+
 
