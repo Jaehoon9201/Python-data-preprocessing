@@ -19,11 +19,11 @@ class AudioUtil():
 # ==============================================
 
 data, Fsamp = AudioUtil.open("TRAIN M1 D40 L0 LABEL0 Num170.wav")
-MaxIdx = 100
+MaxIdx = 1000
 dataprocess = 'DataCut'  # ReSampl / DataCut
 # waveletname = 'cmor63.5-1'
-waveletname = 'cmor10-1'
-# waveletname = 'mexh'
+# waveletname = 'cmor10-1'
+waveletname = 'mexh'
 scale_min = 2
 scale_max = 300
 scales = np.arange(scale_min, scale_max)
@@ -62,8 +62,11 @@ if waveletname == 'mexh':
     Not Complex cwtmatr. --> direct plotting is possible !
     '''
     cwtmatr, freqs = pywt.cwt(data, scales,waveletname, dt)
+    # cwtmatr[0:15] = 0
     plt.imshow(cwtmatr, cmap='viridis', aspect='auto',
                  vmax=abs(cwtmatr).max(), vmin=-abs(cwtmatr).max())
+    plt.ylabel('Scale')
+    plt.xlabel('Time [bin]')
     plt.savefig('wavelet_{}_scale_min_{}_max_{}.png'.format(waveletname, scale_min, scale_max),
                 dpi=100, bbox_inches='tight')
     plt.close('all')
@@ -77,7 +80,7 @@ elif waveletname == 'cmor63.5-1':
     Below we'll use the complex Morlet wavelet in SciPy which looks like this:
     '''
 
-    cwtmatr, freqs = pywt.cwt(data, scales,waveletname, dt)  # cmor63.5-2    mexh
+    cwtmatr, freqs = pywt.cwt(data, scales,waveletname, dt)  #
     power = (abs(cwtmatr)) ** 2
     period = 1. / freqs
     scale0 = 0.000001
@@ -89,17 +92,19 @@ elif waveletname == 'cmor63.5-1':
     contourlevels = np.log2(levels)
 
     # Data
-    wt_freq_results = np.log2(period)
+    wt_prd_reuslts = np.log2(period)
     wt_power_results = np.log2(power)
-    print(wt_freq_results.shape)
+    print(wt_prd_reuslts.shape)
     print(wt_power_results.shape)
     fig, ax = plt.subplots(figsize=(10, 6))
-    im = ax.contourf(time, wt_freq_results, wt_power_results, contourlevels, extend='both', cmap='viridis')
-    yticks = 2**np.arange(np.ceil(wt_freq_results.min()), np.ceil(wt_freq_results.max()))
+    im = ax.contourf(time, wt_prd_reuslts, wt_power_results, contourlevels, extend='both', cmap='viridis')
+    yticks = 2**np.arange(np.ceil(wt_prd_reuslts.min()), np.ceil(wt_prd_reuslts.max()))
     yticks = np.round(yticks, 6)
     # print(yticks)
     ax.set_yticks(np.log2(yticks))
     ax.set_yticklabels(yticks)
+    ax.set_ylabel("Period [sec]")
+    ax.set_xlabel("Time [sec]")
     # ax.invert_yaxis()
 
     fig.colorbar(im, orientation="vertical")
@@ -111,7 +116,7 @@ elif waveletname == 'cmor63.5-1':
 
 elif waveletname == 'cmor10-1':
 
-    cwtmatr, freqs = pywt.cwt(data, scales,waveletname, dt)  # cmor63.5-2    mexh
+    cwtmatr, freqs = pywt.cwt(data, scales,waveletname, dt)
     power = (abs(cwtmatr)) ** 2
     period = 1. / freqs
     scale0 = 0.000001
@@ -123,16 +128,18 @@ elif waveletname == 'cmor10-1':
     contourlevels = np.log2(levels)
 
     # Data
-    wt_freq_results = np.log2(period)
+    wt_prd_reuslts = np.log2(period)
     wt_power_results = np.log2(power)
-    print('shape of wt_freq_results  :'  , wt_freq_results.shape)
+    print('shape of wt_prd_reuslts  :'  , wt_prd_reuslts.shape)
     print('shape of wt_power_results  :' ,wt_power_results.shape)
     fig, ax = plt.subplots(figsize=(10, 6))
-    im = ax.contourf(time, wt_freq_results, wt_power_results, contourlevels, extend='both', cmap='viridis')
-    yticks = 2**np.arange(np.ceil(wt_freq_results.min()), np.ceil(wt_freq_results.max()))
+    im = ax.contourf(time, wt_prd_reuslts, wt_power_results, contourlevels, extend='both', cmap='viridis')
+    yticks = 2**np.arange(np.ceil(wt_prd_reuslts.min()), np.ceil(wt_prd_reuslts.max()))
     yticks = np.round(yticks, 6)
     ax.set_yticks(np.log2(yticks))
     ax.set_yticklabels(yticks)
+    ax.set_ylabel("Period [sec]")
+    ax.set_xlabel("Time [sec]")
     # ax.invert_yaxis()
 
     fig.colorbar(im, orientation="vertical")

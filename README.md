@@ -63,7 +63,7 @@ def FFT(sample_rate, duration, signal):
     + **Reason** : Below matlab code is doing 'normalize' as 'X=fft(x)/N*2; % normalize the data'.  
     
                    But python [ex3] code get the magnitude values after 'abs' function('amplitude_Hz = 2*abs(Y)').    
-                   
+               
         ```matlab
         % test.m
         clear;clc;
@@ -71,13 +71,13 @@ def FFT(sample_rate, duration, signal):
         t= 0:dt:1;
         noise = 2.5 .*rand(length(t),1 );
         x= sin(2*pi*50*t) + sin(2*pi*120*t);
-
+        
         positiveFFT(x',length(x'));
-
+        
         Magnitude=(abs(ans))';
         Order=0:1:length(Magnitude)-1;
         bar(Order, Magnitude);
-
+        
         grid on;
         xlabel('Harmonic Order','FontSize',15);
         ylabel('Mag','FontSize',15);
@@ -98,7 +98,7 @@ def FFT(sample_rate, duration, signal):
          end
            %only want the first half of the FFT, since it is redundant
            cutOff = ceil(N/2); 
-
+        
            %take only the first half of the spectrum
            X = X(1:cutOff);
            freq = freq(1:cutOff);
@@ -385,26 +385,25 @@ As mentioned above, start value of scale is recommended to being above 2 for ove
 
 # Running Results 
 
-(if u want to see the origin figure, refer to ppt in this project)
+* if u want to see the origin figure, refer to ppt in this project
+* <mark style='background-color: #fff5b1'> Analysis </mark>
+  * If Scale includes large scale, it can output results more segmented.
+  * If band width frequency of cmor is set to high level, it can output more segmented outputs in time domain region. (but gonna be sensitive)
+  * <mark style='background-color: #fff5b1'> Caution  </mark>: frequency aspects are different in each graph. (cause of plot functions are set to different)
 
-<img width="779" alt="스크린샷 2022-11-20 오후 10 01 39" src="https://user-images.githubusercontent.com/71545160/202903258-8e6780f0-f523-4458-96a5-e9de4cad9109.png">
-
-<img width="779" alt="스크린샷 2022-11-20 오후 10 01 55" src="https://user-images.githubusercontent.com/71545160/202903266-9bd55d75-5327-41e9-a5c4-e8dcbc9feb30.png">
-
-<img width="779" alt="스크린샷 2022-11-20 오후 10 02 10" src="https://user-images.githubusercontent.com/71545160/202903274-c0fd43a9-ba0f-4355-87a8-075946e65310.png">
+![image-20221123140825145](C:\Users\HALAB_G\AppData\Roaming\Typora\typora-user-images\image-20221123140825145.png)
 
 
 # CWT_v2  - ex2
 
-You can verify a relation between 2 things.
+ You can verify a relation between 2 things. 
 
-* Relation b/w FREQEUNCies and SCALEs
-* Relation b/w CENTER FREQUENCY and SCALEs
+* <mark style='background-color: #fff5b1'> Relation b/w FREQEUNCies and SCALEs </mark>
+* <mark style='background-color: #fff5b1'> Relation b/w CENTER FREQUENCY and SCALEs </mark>
 
 As mentioned above, if u set 'C=1' , the resonalble results are come from 'above scale 2'.
 
 If you want to get reasonable results from 'scale 1', then you are recommended to set 'C' below 1. (ex. C = 0.5)
 
 <img width="659" alt="스크린샷 2022-11-20 오후 10 03 16" src="https://user-images.githubusercontent.com/71545160/202903322-a5ea19ee-2344-46f2-9d63-1a56620df83d.png">
-
 
