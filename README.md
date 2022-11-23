@@ -391,7 +391,7 @@ As mentioned above, start value of scale is recommended to being above 2 for ove
   * If band width frequency of cmor is set to high level, it can output more segmented outputs in time domain region. (but gonna be sensitive)
   * <mark style='background-color: #fff5b1'> Caution  </mark>: frequency aspects are different in each graph. (cause of plot functions are set to different)
 
-![image-20221123140825145](C:\Users\HALAB_G\AppData\Roaming\Typora\typora-user-images\image-20221123140825145.png)
+![image](https://user-images.githubusercontent.com/71545160/203473821-cf0e956a-7b99-4e15-a78c-4a51644dff0d.png)
 
 
 # CWT_v2  - ex2
