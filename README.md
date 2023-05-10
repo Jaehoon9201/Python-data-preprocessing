@@ -421,6 +421,14 @@ X_mag[0] =X_mag[0]/2
 X_mag[n_oneside-1] =X_mag[n_oneside-1]/2
 ```
 
+```python
+# same with above (general form)
+# normalize the amplitude
+X_mag =abs(X[:n_oneside]) * 2/N
+X_mag[0] =X_mag[0]/2
+X_mag[n_oneside-1] =X_mag[n_oneside-1]/2
+```
+
 ## Results
 
 * Orginal signal
