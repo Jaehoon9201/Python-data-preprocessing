@@ -418,7 +418,6 @@ If you want to get reasonable results from 'scale 1', then you are recommended t
 # normalize the amplitude
 X_mag =abs(X[:n_oneside]) * 1/n_oneside
 X_mag[0] =X_mag[0]/2
-X_mag[n_oneside-1] =X_mag[n_oneside-1]/2
 ```
 
 ```python
@@ -426,7 +425,6 @@ X_mag[n_oneside-1] =X_mag[n_oneside-1]/2
 # normalize the amplitude
 X_mag =abs(X[:n_oneside]) * 2/N
 X_mag[0] =X_mag[0]/2
-X_mag[n_oneside-1] =X_mag[n_oneside-1]/2
 ```
 
 ## Results
