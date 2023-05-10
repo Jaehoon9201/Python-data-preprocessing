@@ -446,10 +446,13 @@ freq = 2
 x += 3*np.sin(2*np.pi*freq*t)
 freq = 3
 x += 4*np.sin(2*np.pi*freq*t)
+freq = 29
+x += 5*np.sin(2*np.pi*freq*t)
+
 ```
 
-![image](https://github.com/Jaehoon9201/Python-data-preprocessing/assets/71545160/cebc4af5-dd7c-485b-8a58-54d5d32b8038)
+![image](https://github.com/Jaehoon9201/Python-data-preprocessing/assets/71545160/a585ee3b-22c1-418e-9983-931f940edfd2)
 
-![image](https://github.com/Jaehoon9201/Python-data-preprocessing/assets/71545160/eab4b053-2835-4b89-a751-1715c5d63d25)
+![image](https://github.com/Jaehoon9201/Python-data-preprocessing/assets/71545160/6b0c186c-5974-46a7-b282-f192e0341ea6)
 
-![image](https://github.com/Jaehoon9201/Python-data-preprocessing/assets/71545160/b8fe7891-2262-4aed-bf6a-d897c387e7b2)
+![image](https://github.com/Jaehoon9201/Python-data-preprocessing/assets/71545160/380395d7-a037-4150-bae6-57a27de265de)
