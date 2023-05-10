@@ -407,3 +407,41 @@ If you want to get reasonable results from 'scale 1', then you are recommended t
 
 <img width="659" alt="스크린샷 2022-11-20 오후 10 03 16" src="https://user-images.githubusercontent.com/71545160/202903322-a5ea19ee-2344-46f2-9d63-1a56620df83d.png">
 
+# DCT
+
+- We must normalization of magnitude of DCT for adjusting the real magnitude with the orginal signal. See below. 
+- Scaling factors for End points (0~ N//2) and the others are different. 
+
+```python
+# normalize the amplitude
+X_mag =abs(X[:n_oneside]) * 1/n_oneside
+X_mag[0] =X_mag[0]/2
+X_mag[n_oneside-1] =X_mag[n_oneside-1]/2
+```
+
+## Results
+
+* Orginal signal
+
+```python
+# sampling rate
+sr = 60
+# sampling interval
+ts = 1.0/sr
+t = np.arange(0,1,ts)
+
+freq = 0.
+x = 1
+freq = 1.
+x += 2*np.sin(2*np.pi*freq*t)
+freq = 2
+x += 3*np.sin(2*np.pi*freq*t)
+freq = 3
+x += 4*np.sin(2*np.pi*freq*t)
+```
+
+![image](https://github.com/Jaehoon9201/Python-data-preprocessing/assets/71545160/cebc4af5-dd7c-485b-8a58-54d5d32b8038)
+
+![image](https://github.com/Jaehoon9201/Python-data-preprocessing/assets/71545160/eab4b053-2835-4b89-a751-1715c5d63d25)
+
+![image](https://github.com/Jaehoon9201/Python-data-preprocessing/assets/71545160/b8fe7891-2262-4aed-bf6a-d897c387e7b2)
