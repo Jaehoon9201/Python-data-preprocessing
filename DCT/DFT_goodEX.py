@@ -9,17 +9,19 @@ import numpy as np
 plt.style.use('seaborn-poster')
 
 # sampling rate
-sr = 100
+sr = 60
 # sampling interval
 ts = 1.0/sr
 t = np.arange(0,1,ts)
 
+freq = 0.
+x = 1
 freq = 1.
-x = 3*np.sin(2*np.pi*freq*t)
-freq = 4
-x += np.sin(2*np.pi*freq*t)
-freq = 7
-x += 0.5* np.sin(2*np.pi*freq*t)
+x += 2*np.sin(2*np.pi*freq*t)
+freq = 2
+x += 3*np.sin(2*np.pi*freq*t)
+freq = 3
+x += 4*np.sin(2*np.pi*freq*t)
 
 plt.figure(figsize = (8, 6))
 plt.plot(t, x, 'r')
@@ -28,7 +30,6 @@ plt.ylabel('Amplitude')
 plt.show()
 
 # -------------------
-
 def DFT(x):
     """
     Function to calculate the
@@ -52,7 +53,7 @@ N = len(X)
 n = np.arange(N)
 T = N/sr
 freq = n/T
-
+print(freq)
 plt.figure(figsize = (8, 6))
 plt.stem(freq, abs(X), 'b', \
          markerfmt=" ", basefmt="-b")
@@ -68,19 +69,21 @@ n_oneside = N//2
 f_oneside = freq[:n_oneside]
 
 # normalize the amplitude
-X_oneside =X[:n_oneside]/n_oneside
+X_mag =abs(X[:n_oneside]) * 1/n_oneside
+X_mag[0] =X_mag[0]/2
+X_mag[n_oneside-1] =X_mag[n_oneside-1]/2
 
 plt.figure(figsize = (12, 6))
 plt.subplot(121)
-plt.stem(f_oneside, abs(X_oneside), 'b', \
+plt.stem(f_oneside, (X_mag), 'b', \
          markerfmt=" ", basefmt="-b")
 plt.xlabel('Freq (Hz)')
 plt.ylabel('DFT Amplitude |X(freq)|')
 
 plt.subplot(122)
-plt.stem(f_oneside, abs(X_oneside), 'b', \
+plt.stem(f_oneside, (X_mag), 'b', \
          markerfmt=" ", basefmt="-b")
 plt.xlabel('Freq (Hz)')
-plt.xlim(0, 10)
+plt.xlim(-1, 10)
 plt.tight_layout()
 plt.show()
