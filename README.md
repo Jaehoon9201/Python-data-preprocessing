@@ -411,7 +411,8 @@ If you want to get reasonable results from 'scale 1', then you are recommended t
 
 - We must normalization of magnitude of DCT for adjusting the real magnitude with the orginal signal. See below. 
 - Scaling factors for End points (0~ N//2) and the others are different. 
-     - factor 2 is only considered when using FFT.
+     - The FFTs where some users use a 2/N scaling conform to Parseval's theorem, where the energy is conserved. 
+     - (https://dsp.stackexchange.com/questions/48049/understanding-where-the-constant-2-n-comes-from-in-fourier-transformation)
      
 ```python
 # normalize the amplitude
