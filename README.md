@@ -411,7 +411,8 @@ If you want to get reasonable results from 'scale 1', then you are recommended t
 
 - We must normalization of magnitude of DCT for adjusting the real magnitude with the orginal signal. See below. 
 - Scaling factors for End points (0~ N//2) and the others are different. 
-
+     - factor 2 is only considered when using FFT.
+     
 ```python
 # normalize the amplitude
 X_mag =abs(X[:n_oneside]) * 1/n_oneside
