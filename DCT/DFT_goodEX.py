@@ -22,6 +22,9 @@ freq = 2
 x += 3*np.sin(2*np.pi*freq*t)
 freq = 3
 x += 4*np.sin(2*np.pi*freq*t)
+freq = 29
+x += 5*np.sin(2*np.pi*freq*t)
+
 
 plt.figure(figsize = (8, 6))
 plt.plot(t, x, 'r')
@@ -36,12 +39,10 @@ def DFT(x):
     discrete Fourier Transform
     of a 1D real-valued signal x
     """
-
     N = len(x)
     n = np.arange(N)
     k = n.reshape((N, 1))
     e = np.exp(-2j * np.pi * k * n / N)
-
     X = np.dot(e, x)
 
     return X
@@ -69,9 +70,9 @@ n_oneside = N//2
 f_oneside = freq[:n_oneside]
 
 # normalize the amplitude
-X_mag =abs(X[:n_oneside]) * 1/n_oneside
+X_mag =abs(X[:n_oneside]) * 2/N
 X_mag[0] =X_mag[0]/2
-X_mag[n_oneside-1] =X_mag[n_oneside-1]/2
+# X_mag[n_oneside-1] =X_mag[n_oneside-1]/2
 
 plt.figure(figsize = (12, 6))
 plt.subplot(121)
@@ -87,3 +88,5 @@ plt.xlabel('Freq (Hz)')
 plt.xlim(-1, 10)
 plt.tight_layout()
 plt.show()
+
+print(X_mag)
